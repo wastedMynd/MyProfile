@@ -1,0 +1,236 @@
+* {
+    margin:                     0;
+    padding:                    0;
+    box-sizing:                 border-box;
+}
+
+h1 {
+    color:                      #426696;
+    font-weight:                600;
+    font-size:                  3rem;
+    opacity:                    0.8;
+}
+
+h2, p, h4 {
+    color:                      #658ec6;
+    font-weight:                500;
+    opacity:                    0.8;
+}
+
+h3 {
+    color:                      #426696;
+    font-weight:                600;
+    opacity:                    0.8;
+}
+
+main {
+    font-family:                "Poppins", sans-serif;
+    min-height:                 100vh;
+    background:                 linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display:                    flex;
+    align-items:                center;
+    justify-content:            center;
+}
+
+.glass {
+    background:                 white;
+    min-height:                 80vh;
+    width:                      70%;
+    background:                 linear-gradient(to right bottom, rgba(255,255,255, 0.6), rgba(255,255,255, 0.4));
+    border-radius:              2rem;
+    z-index:                    3;
+    backdrop-filter:            blur(3rem);
+    display:                    flex;
+}
+
+.circle1, .circle2{
+    background:                 white;
+    height:                     20rem;
+    width:                      20rem;
+    border-radius:              50%;
+    position:                   absolute;
+    background:                 linear-gradient(to right bottom, rgba(255,255,255, 0.8), rgba(255,255,255, 0.2));
+}
+
+.circle1 {
+     top:                       5%;
+     right:                     5%;
+}
+
+.circle2 {
+     bottom:                    5%;
+     left:                      5%;
+}
+
+
+/* region dashboard */
+.dashboard {
+    flex:                       1;
+    display:                    flex;
+    flex-direction:             column;
+    align-items:                center;
+    justify-content:            space;
+    text-align:                 center;
+    padding-top:                5rem;
+    background:                 linear-gradient(to right bottom, rgba(255,255,255, 0.6), rgba(255,255,255, 0.4));
+    border-radius:              2rem;
+}
+
+.user img {
+    width:                      60%;
+    height:                     60%;
+    border-radius:              50%;
+}
+
+.user h3 {
+    font-weight:                bold;
+    font-size:                  1.8rem;
+    opacity:                    1.0;
+}
+
+.user h4 {
+    font-size:                  1.6rem;
+    opacity:                    1.0;
+}
+
+.link {
+    display:                    flex;
+    margin:                     2rem 0rem;
+    padding:                    1rem 5rem;
+    align-items:                center;
+}
+
+.link-info {
+    display:                    flex;
+    flex-direction:             column;
+    justify-content:            space;
+    align-items:                left;
+    text-align:                 left;
+}
+
+.link-info h2 {
+    margin-left:                2rem;
+    padding-left:               2rem;
+}
+
+.link-info h4 {
+    margin-left:                2rem;
+    padding-left:               2rem;
+}
+
+
+.link img {
+    width:                      15%;
+    height:                     15%;
+    border-radius:              1rem;
+}
+
+
+
+.link h2 {
+    padding:                    0rem 2rem;
+}
+
+.contact {
+    background:                 linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius:              2rem;
+    color:                      white;
+    margin-top:                 10rem;
+    padding:                    2rem;
+    display:                    flex;
+}
+
+.contact h2 {
+    color:                      white;
+    font-weight:                600;
+}
+/* endregion dashboard */
+
+/* region skills */
+.skills {
+    flex:                       2;
+    display:                    flex;
+    flex-direction:             column;
+    justify-content:            space-evenly;
+    margin:                     5rem;
+}
+
+.status input {
+    background:                 linear-gradient(to right bottom, rgba(255,255,255, 0.6), rgba(255,255,255, 0.4));
+    border:                     none;
+    width:                      50%;
+    height:                     30%;
+    text-align:                 left;
+    padding:                    0.5rem;
+    padding-left:               2rem;
+    font-size:                  1.5rem;
+    margin-top:                 5rem;
+    margin-bottom:              5rem;
+    border-radius:              2rem;
+}
+
+.status input:focus{
+    outline:                    none;
+}
+
+.card {
+    display:                    flex;
+    background:                 linear-gradient(to left top, rgba(255,255,255, 0.8), rgba(255,255,255, 0.5));
+    border-radius:              1rem;
+    margin:                     2rem 0em;
+    padding:                    2rem;
+    box-shadow:                 6px 6px 20px rgba(122,122,122, 0.2);
+    justify-content:            space-between;
+}
+
+.card img {
+    flex:                       10%;
+    border-radius:              2rem;
+    height:                     calc(30%, 128px);
+    width:                      calc(30%, 128px);
+    opacity:                    0.4;
+    color:                      rgba(177,237,242,0.6);
+}
+
+.card-info {
+    flex:                       85%;
+    margin-left:                15rem;
+    margin-right:               5rem;
+    display:                    flex;
+    flex-direction:             column;
+    justify-content:            space-evenly;
+}
+
+.card-info p{
+    font-size:                  1.2rem;
+}
+
+
+.progress {
+    background:                 linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width:                      100%;
+    height:                     15%;
+    border-radius:              1rem;
+    position:                   relative;
+    overflow:                   hidden;
+}
+
+.progress::after{
+    content:                    "";
+    width:                      100%;
+    height:                     100%;
+    background:                 rgb(236,236,236);
+    position:                   absolute;
+    left:                       50%;
+}
+
+.percentage {
+    flex:                       5%;
+    margin-top:                 2rem;
+    font-weight:                bold;
+    background:                 linear-gradient(to right top, #65dfc9, #6cdbeb);
+    -webkit-background-clip:    text;
+    -webkit-text-fill-color:    transparent;
+
+}
+/* endregion skills */
